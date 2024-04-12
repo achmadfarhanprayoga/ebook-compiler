@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Book Compiler</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap" rel="stylesheet">
+ 
+    <style>
+        .highlight-box {
+            background-color: rgb(154, 228, 206);
+            /* Warna latar belakang abu-abu muda */
+            border: 1px solid #dcdcdc;
+            /* Batas berwarna abu-abu */
+            padding: 20px;
+            /* Padding sebesar 20px */
+            margin: 20px 0;
+            /* Margin atas dan bawah 20px, kiri dan kanan 0 */
+            border-radius: 5px;
+            /* Sudut kotak yang sedikit melengkung */
+        }
+
+        .cover {
+            background-image: url('gambar/cover.jpg');
+            opacity: 0, 5;
+            background-size: cover;
+            background-position: center;
+            height: 40rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            background-color: rgb(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .cover h1 {
+            color: white;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="ebook-container">
+        <header>
+            <section class="chapter">
+                <div class="cover">
+                    <h1>Pemrograman Web
+                        Menggunakan <i>E-Book Compiler</i></h1>
+                </div>
+
+            </section>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#chapter1">HTML</a>
+                        <a href="#chapter2">CSS</a></li>
+                    <!-- Tambahkan lebih banyak bab sesuai kebutuhan -->
+                </ul>
+            </nav>
+        </header>
+
+        <div class="clouds">
+            <div class="cloud x1"></div>
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+        </div>
+
+        <div id="chapter1" class="chapter">
+            <h2>HTML</h2>
+            <div class="highlight-box">
+                <h2><b>Pengertian HTML</b></h2>
+                <p>HTML (Hyper Text Markup Language) adalah sebuah bahasa formatting yang digunakan
+                    untuk membuat sebuah halaman website. Di dalam dunia pemrograman berbasis website(Web
+                    Programming), HTML menjadi pondasi dasar pada halaman website. sebuah file HTML di di
+                    simpan dengan ekstensi .html (dot html). dan dapat di eksekusi atau diakses menggunakan web
+                    browser(Google Chrome, Mozilla Firefox, Opera, Safari dan lain-lain).</p>
+                <p>HTML merupakan singkatan dari HyperText Markup Language. Dengan HTML, Anda dapat membuat halaman web
+                    yang terdiri dari teks, gambar, tautan, formulir, dan banyak lagi. Berikut adalah beberapa elemen
+                    dasar dalam HTML:</p>
+
+                <ul>
+                    <li><strong>&lt;html&gt;</strong>: Menandakan awal dan akhir dari dokumen HTML.</li>
+                    <li><strong>&lt;head&gt;</strong>: Berisi informasi tentang dokumen, seperti judul dan meta tag.
+                    </li>
+                    <li><strong>&lt;body&gt;</strong>: Berisi isi dari dokumen, seperti teks, gambar, dan elemen-elemen
+                        lainnya yang akan ditampilkan di halaman web.</li>
+                    <li><strong>&lt;h1&gt;</strong>, <strong>&lt;h2&gt;</strong>, ..., <strong>&lt;h6&gt;</strong>:
+                        Menandai heading atau judul.</li>
+                    <li><strong>&lt;p&gt;</strong>: Menandai paragraf teks.</li>
+                    <li><strong>&lt;a&gt;</strong>: Membuat tautan atau hyperlink.</li>
+                    <li><strong>&lt;img&gt;</strong>: Menyisipkan gambar.</li>
+                    <li><strong>&lt;ul&gt;</strong>: Membuat daftar tak-terurut.</li>
+                    <li><strong>&lt;li&gt;</strong>: Membuat item dalam daftar.</li>
+                    <li><strong>&lt;form&gt;</strong>: Membuat formulir untuk interaksi pengguna.</li>
+                    <li><strong>&lt;/..&gt;</strong>: untuk menutup perintah, contoh &lt;/p&gt;</li>
+                    <!-- Tambahkan lebih banyak elemen HTML jika diperlukan -->
+                </ul>
+            </div>
+            <div class="highlight-box">
+                <h2>Kegunaan HTML</h2>
+                <ul>
+                    <li> Membungkus element-element tertentu sesuai kebutuhan.</li>
+                    <li> Membuat heading atau format judul.</li>
+                    <li> Membuat Tabel.</li>
+                    <li> Membuat List</li>
+                    <li> Membuat Paragraf</li>
+                    <li>Membuat form.</li>
+                    <li>Membuat Tombol.</li>
+                    <li>Membuat huruf tebal.</li>
+                    <li>Membuat huruf miring.</li>
+                    <li>Menampilkan gambar</li>
+                    <li>Menampilkan Vidio</li>
+                </ul>
+            </div>
+            <div class="highlight-box">
+                <h2>Menulis Codingan HTML</h2>
+                <p>Menulis codingan html diharuskan membuka aplikasi text editor seperti</p>
+                <ul>
+                    <li>Sublime text</li>
+                    <li>Notepad ++</li>
+                    <li>Visual Studio Code</li>
+                    <li>atom</li>
+                </ul>
+                <p>Dan masil banyak yang lainnya, langkah pertama kita install terlebih dahulu salah satu aplikasi text
+                    code editor
+                    Setelah diinstall kalian bisa langsung save file yang akan di buat dengan format .html (dothtml).
+                    Simpan dalam folder
+                    , setelah kalian buat program nya, kalian bisa save dengan menekan tombol (ctrl + s) control dan s.
+                    lalu file yang ada di dalam folder bisa kalian buka menggunakan web browser
+                    seperti mozila,chrome,microsoft edge, dll.
+                </p>
+            </div>
+
+            <h3>
+                <p style="text-align: center;"> Mari kita belajar dasar dasar html menggunakan Compiler </p>
+            </h3>
+
+            <div class="highlight-box">
+                <li>Membuat heading atau format judul</li>
+                <img src="./gambar/heading.png">
+                <p style="text-align: center;"> &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt; digunakan untuk membuat judul berukuran
+                    Besar, sedang, dan kecil. &lt;p&gt; Digunakan untuk membuat paragraf</p>
+
+                <!-- E-Book Compiler -->
+                <b>Silahkan Mencoba Coding membuat heading atau format judul</b>
+                <div id="html-playground">
+                    <textarea id="html-code" placeholder="Masukkan kode HTML di sini..."></textarea>
+                    <button id="run-button-heading">Run</button>
+                    <iframe id="output-frame-heading"></iframe>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="highlight-box">
+                <li>Membuat Tabel di HTML</li>
+                <img src="./gambar/tabel.png">
+                <p style="text-align: left;"> &lt;tabel&gt; Untuk membungkus tabel
+                    <br> &lt;tr&gt; (tabel row) Untuk membuat baris
+                    <br> &lt;td&gt; (tabel data) Membuat sel</p>
+
+                <!-- E-Book Compiler -->
+                <p>Silahkan Mencoba Coding Membuat tabel</p>
+                <div id="html-playground">
+                    <textarea id="html-code" placeholder="Masukkan kode HTML di sini..."></textarea>
+                    <button id="run-button-tabel">Run</button>
+                    <iframe id="output-frame-tabel"></iframe>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <li>Membuat Tabel border di HTML</li>
+                <img src="./gambar/border.png">
+                <p style="text-align: left;"> &lt;tabel border="1"&gt; nilai 1 pada border untuk ketebalan garis
+                    <br> &lt;tabel border="1" cellpadding="10"&gt; Nilai 10 pada cellpadding untuk jarak tabel dengan
+                    huruf.
+
+                    <!-- E-Book Compiler -->
+                    <h3>HTML Compiler</h3>
+                    <p>Silahkan Mencoba Coding membuat tabel border</p>
+                    <div id="html-playground">
+                        <textarea id="html-code" placeholder="Masukkan kode HTML di sini..."></textarea>
+                        <button id="run-button-tabel-border">Run</button>
+                        <iframe id="output-frame-tabel-border"></iframe>
+                    </div>
+            </div>
+
+            <div class="highlight-box">
+                <li>Membuat list di HTML</li>
+                <img src="./gambar/list.png">
+                <p style="text-align: left;"> &lt;ol&gt; (order list) list yang terurut
+                    <br> &lt;li&gt; (list item) list yang mengikuti ol
+                    <br> Jika ingin mengubah list maka tinggal tambahkan type='a/A/i/I' setelah &lt;ol&gt;
+                    <br> contohnya &lt;ol type='a'&gt;
+                </p>
+
+                    <!-- E-Book Compiler -->
+                    <p>Silahkan Mencoba Coding membuat list</p>
+                    <div id="html-playground">
+                        <textarea id="html-code" placeholder="Masukkan kode HTML di sini..."></textarea>
+                        <button id="run-button-list">Run</button>
+                        <iframe id="output-frame-list"></iframe>
+                    </div>
+            </div>
+            </section>
+
+
+            <section id="chapter2" class="chapter">
+                <h2>Bab 2: CSS</h2>
+                <img src="css-intro.png" alt="Pengenalan CSS">
+                <p>CSS digunakan untuk mengatur tampilan dan layout dari elemen-elemen HTML. Dengan CSS, Anda dapat
+                    mengatur warna, ukuran, posisi, dan efek visual lainnya pada halaman web. CSS juga memungkinkan Anda
+                    untuk membuat desain yang responsif, yang dapat menyesuaikan tampilan halaman web dengan berbagai
+                    perangkat dan ukuran layar...</p>
+                <p>Contoh penggunaan CSS:</p>
+                <pre>
+                    <code>
+                        body {
+                            font-family: Arial, sans-serif;
+                            background-color: #f2f2f2;
+                        }
+            
+                        h1 {
+                            color: blue;
+                        }
+            
+                        .container {
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                    </code>
+                </pre>
+                <p>Dalam contoh di atas, CSS digunakan untuk mengatur font, warna, dan layout dari elemen-elemen pada
+                    halaman web.</p>
+            </section>
+
+            <section id="chapter3" class="chapter">
+                <h2>Bab 3: JavaScript</h2>
+                <img src="javascript-intro.png" alt="Pengenalan JavaScript">
+                <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif.
+                    Dengan JavaScript, Anda dapat menangani interaksi pengguna seperti klik tombol, mengisi formulir,
+                    dan berinteraksi dengan elemen-elemen HTML pada halaman web.</p>
+                <p>JavaScript juga memungkinkan Anda untuk membuat animasi, validasi formulir, memuat konten secara
+                    dinamis, dan banyak lagi. Hal ini membuat pengalaman pengguna menjadi lebih dinamis dan menarik.</p>
+                <p>Contoh penggunaan JavaScript:</p>
+                <pre>
+                    <code>
+                        // Menampilkan pesan saat tombol di klik
+                        document.getElementById("myButton").addEventListener("click", function() {
+                            alert("Tombol telah diklik!");
+                        });
+                    </code>
+                </pre>
+                <p>Dalam contoh di atas, JavaScript digunakan untuk menambahkan event listener ke sebuah tombol. Ketika
+                    tombol tersebut diklik, akan muncul pesan peringatan.</p>
+            </section>
+
+            <!-- Tambahkan lebih banyak bab dengan gambar dan konten -->
+
+
+            <!-- Tambahkan lebih banyak bab dengan gambar dan konten -->
+
+        </div>
+
+        
+        
+       
+        </script>
+
+<script>
+    document.getElementById("run-button").addEventListener("click", function () {
+        var htmlCode = document.getElementById("html-code").value; // Mengambil kode HTML dari textarea
+        var outputFrame = document.getElementById("output-frame").contentWindow
+        .document; // Mendapatkan dokumen dalam iframe
+
+        // Menulis kode HTML ke dalam dokumen iframe
+        outputFrame.open();
+        outputFrame.write(htmlCode);
+        outputFrame.close();
+    });
+</script>
+</body>
+<script src="script.js"></script>
+</html>
