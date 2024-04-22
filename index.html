@@ -71,14 +71,7 @@
             </nav>
         </header>
 
-        <div class="clouds">
-            <div class="cloud x1"></div>
-            <div class="cloud x2"></div>
-            <div class="cloud x3"></div>
-            <div class="cloud x4"></div>
-            <div class="cloud x5"></div>
-        </div>
-
+        
         <div id="chapter1" class="chapter">
             <h2>HTML</h2>
             <div class="highlight-box">
@@ -365,7 +358,77 @@
                  </div>
                 </div>
                 <hr>
-              
+                <div class="highlight-box">
+                    <br>Ketikan didalam header masukan css didalam &lt;style&gt;
+                    <br><img src="./gambar/ffamily.PNG">
+                    <li>Cara merubah font menggunakan CSS</li>
+
+                    <br><b>p{ }</b> Paragraf yang ingin diubah <b>&lt;p&gt;</b>
+                    <br><b>font-family: arial;</b>Digunakan untuk mengubah jenis font menjadi font arial
+<hr>
+                     <!-- E-Book Compiler -->
+                 <p style="font-size:12px;">Silahkan Mencoba Coding merubah font family</p>
+                 <div id="html-compiler">
+                     <textarea id="html-code-ffamily" placeholder="Masukkan kode CSS di sini..."></textarea>
+                     <button id="run-button-ffamily">Run</button>
+                     <iframe id="output-frame-ffamily"></iframe>
+                 </div>
+                </div>
+              <div class="highlight-box">
+                <br>Ketikan didalam header masukan css didalam &lt;style&gt;
+                <br><img src="./gambar/fsize.PNG">
+                <li>cara merubah ukuran font</li>
+
+                <br><b>p{ }</b>Paragraf yang akan diubah <b>&lt;p&gt;</b>
+                <br><b>font-size: 20;</b>Digunakan untuk merubah ukuran font
+<hr>
+                   <!-- E-Book Compiler -->
+                   <p style="font-size:12px;">Silahkan Mencoba Coding merubah ukuran font</p>
+                   <div id="html-compiler">
+                       <textarea id="html-code-fsize" placeholder="Masukkan kode CSS di sini..."></textarea>
+                       <button id="run-button-fsize">Run</button>
+                       <iframe id="output-frame-fsize"></iframe>
+                   </div>  
+              </div>
+              <div class="highlight-box">
+                <br>Ketikan didalam header masukan css didalam &lt;style&gt;
+                <br><img src="./gambar/h1warna.PNG">
+                <li>Cara merubah warna teks header 1</li>
+
+                <br><b>h1{ }</b>Header 1 yang akan diubah <b>&lt;h1&gt;</b>
+                <br><b>color: brown;</b>Digunakan untuk merubah warna h1 menjadi coklat
+<hr>
+               <!-- E-Book Compiler -->
+               <p style="font-size:12px;">Silahkan Mencoba Coding merubah warna header 1</p>
+               <div id="html-compiler">
+                   <textarea id="html-code-h1warna" placeholder="Masukkan kode CSS di sini..."></textarea>
+                   <button id="run-button-h1warna">Run</button>
+                   <iframe id="output-frame-h1warna"></iframe>
+               </div>    
+              </div>
+              <div class="highlight-box">
+                <br>Ketikan didalam header masukan css didalam &lt;style&gt;
+                <br><img src="./gambar/padding.PNG">
+                <li>Mengatur jarak padding di HTML</li>
+
+                <br><b>p{ }</b>Paragraf yang akan diubah <b>&lt;p&gt;</b>
+                <br><b> padding-top: 10px;
+                <br>padding-right: 5px;
+                <br>padding-bottom: 7px;
+                <br>padding-left: 9px;</b>
+                <br>Digunakan untuk mengatur jarak tepian padding
+                <br>atau lebih mudahnya bisa ditulis dengan
+                <br><b>p {padding: 2px, 3px, 5px, 7px;}</b>
+
+<hr>
+                    <!-- E-Book Compiler -->
+                    <p style="font-size:12px;">Silahkan Mencoba Coding mengatur jarak padding</p>
+                    <div id="html-compiler">
+                        <textarea id="html-code-padding" placeholder="Masukkan kode CSS di sini..."></textarea>
+                        <button id="run-button-padding">Run</button>
+                        <iframe id="output-frame-padding"></iframe>
+                    </div>                     
+              </div>
                     <pre>
                     <code>
                         &lt;style&gt;
@@ -387,32 +450,6 @@
                 </pre>
                     
             </section>
-
-            <section id="chapter3" class="chapter">
-                <h2>Bab 3: JavaScript</h2>
-                <img src="javascript-intro.png" alt="Pengenalan JavaScript">
-                <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif.
-                    Dengan JavaScript, Anda dapat menangani interaksi pengguna seperti klik tombol, mengisi formulir,
-                    dan berinteraksi dengan elemen-elemen HTML pada halaman web.</p>
-                <p>JavaScript juga memungkinkan Anda untuk membuat animasi, validasi formulir, memuat konten secara
-                    dinamis, dan banyak lagi. Hal ini membuat pengalaman pengguna menjadi lebih dinamis dan menarik.</p>
-                <p>Contoh penggunaan JavaScript:</p>
-                <pre>
-                    <code>
-                        // Menampilkan pesan saat tombol di klik
-                        document.getElementById("myButton").addEventListener("click", function() {
-                            alert("Tombol telah diklik!");
-                        });
-                    </code>
-                </pre>
-                <p>Dalam contoh di atas, JavaScript digunakan untuk menambahkan event listener ke sebuah tombol. Ketika
-                    tombol tersebut diklik, akan muncul pesan peringatan.</p>
-            </section>
-
-            <!-- Tambahkan lebih banyak bab dengan gambar dan konten -->
-
-
-            <!-- Tambahkan lebih banyak bab dengan gambar dan konten -->
 
         </div>
 
@@ -508,6 +545,46 @@
     document.getElementById("run-button-warna").addEventListener("click", function () {
         var htmlCode = document.getElementById("html-code-warna").value; // Mengambil kode CSS dari textarea
         var outputFrame = document.getElementById("output-frame-warna").contentWindow
+        .document; // Mendapatkan dokumen dalam iframe
+
+        // Menulis kode HTML ke dalam dokumen iframe
+        outputFrame.open();
+        outputFrame.write(htmlCode);
+        outputFrame.close();
+    });
+     document.getElementById("run-button-ffamily").addEventListener("click", function () {
+        var htmlCode = document.getElementById("html-code-ffamily").value; // Mengambil kode CSS dari textarea
+        var outputFrame = document.getElementById("output-frame-ffamily").contentWindow
+        .document; // Mendapatkan dokumen dalam iframe
+
+        // Menulis kode HTML ke dalam dokumen iframe
+        outputFrame.open();
+        outputFrame.write(htmlCode);
+        outputFrame.close();
+    });
+    document.getElementById("run-button-fsize").addEventListener("click", function () {
+        var htmlCode = document.getElementById("html-code-fsize").value; // Mengambil kode CSS dari textarea
+        var outputFrame = document.getElementById("output-frame-fsize").contentWindow
+        .document; // Mendapatkan dokumen dalam iframe
+
+        // Menulis kode HTML ke dalam dokumen iframe
+        outputFrame.open();
+        outputFrame.write(htmlCode);
+        outputFrame.close();
+    });
+    document.getElementById("run-button-h1warna").addEventListener("click", function () {
+        var htmlCode = document.getElementById("html-code-h1warna").value; // Mengambil kode CSS dari textarea
+        var outputFrame = document.getElementById("output-frame-h1warna").contentWindow
+        .document; // Mendapatkan dokumen dalam iframe
+
+        // Menulis kode HTML ke dalam dokumen iframe
+        outputFrame.open();
+        outputFrame.write(htmlCode);
+        outputFrame.close();
+    });
+    document.getElementById("run-button-padding").addEventListener("click", function () {
+        var htmlCode = document.getElementById("html-code-padding").value; // Mengambil kode CSS dari textarea
+        var outputFrame = document.getElementById("output-frame-padding").contentWindow
         .document; // Mendapatkan dokumen dalam iframe
 
         // Menulis kode HTML ke dalam dokumen iframe
